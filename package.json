@@ -1,0 +1,17 @@
+{
+  "name": "rovers-app",
+  "version": "1.0.0",
+  "description": "Mars rovers app for platform 45 technical challenge",
+  "main": "main.ts",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Nkokhelo Tembe",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^17.0.23",
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
+  }
+}
