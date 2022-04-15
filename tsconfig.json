@@ -10,6 +10,7 @@
     "skipLibCheck": true,
     "strictNullChecks": false,
     "useUnknownInCatchVariables": true,
+    "noStrictGenericChecks": true
   },
   "exclude": [
     "setup.ts",
