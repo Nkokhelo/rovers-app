@@ -1,1 +1,4 @@
-import jest from 'jest';
+
+describe('rovers-app tests', () => {
+  it('Test', () => {});
+});

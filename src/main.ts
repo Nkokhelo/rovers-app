@@ -4,9 +4,7 @@ import { CardinalPoint } from "./classes/cardinalPoint";
 import Plateau from "./classes/plateau";
 import Rover from "./classes/rover";
 import { Direction } from "./enum/directions";
-// import  Direction  from "./classes/direction";
 
-// const file = fs.readFileSync("./documents/rovers.txt", { encoding: "utf-8" });
 
 const main = async () => {
 
@@ -45,6 +43,8 @@ const getPlateauCoords = (lines: string[]) => {
   }
   return plateauCoords.map(x => Number(x));
 }
+
+
 const getRoverCoords = (lines: string[]) => {
   const roverCoords = lines.shift().split(' ');
   if(roverCoords.length != 3) {
