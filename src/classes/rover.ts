@@ -9,7 +9,6 @@ export default class Rover {
     this._direction = CardinalPoint.parse(d);
     this.directionIndex = CardinalPoint.getIndex(this._direction);
     console.log(`\nRover landed at : ${this.getPostion()}`);
-    // if()
   }
 
   public navigate(navigationCmd: string) {
@@ -37,17 +36,13 @@ export default class Rover {
     }
   }
   private turnRight() {
-    const prevDirection = CardinalPoint.getStringKey(this._direction);
     this.directionIndex = ((this.directionIndex + 1) == 5 ) ? 1 : this.directionIndex + 1;
     this._direction = CardinalPoint.parse(this.directionIndex);
-    // console.log(`Turning right : from ${prevDirection} to ${CardinalPoint.getStringKey(this._direction)}`);
   }
 
   private turnLeft() {
-    const prevDirection = CardinalPoint.getStringKey(this._direction);
     this.directionIndex = ((this.directionIndex - 1) == 0) ? 4 : this.directionIndex - 1;
     this._direction = CardinalPoint.parse(this.directionIndex);
-    // console.log(`Turning left : from ${prevDirection} to ${CardinalPoint.getStringKey(this._direction)}`);
   }
 
   private move() {
@@ -67,7 +62,6 @@ export default class Rover {
         this.x = Plateau.isValidX(this.x - 1) ? this.x - 1 : this.x;
         break;
     }
-    // console.log(`Moving : from ${fromPosition} to ${this.getPostion()}`);
   }
 
   private getPostion() {
